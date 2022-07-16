@@ -10,4 +10,5 @@ O programa pede um arquivo .csv de reports de covid e imprime o seguinte:
 4) O maior valor de "Deaths" entre os países do hemisfério norte.
 5) A soma de "Active" de todos os países em que "Confirmed" é maior o igual que 1.000.000.
 
-Para executar o programa, basta rodar o script 'start' do package.json <code>npm run start</code> ou <code>yarn start</code>
+Para executar o programa, instale as dependencias com <code>npm install</code> e depois basta rodar o script 'start' do package.json <code>npm run start</code> ou <code>yarn start</code>
+<br/>Assim que o programa executar, é necessário digitar um .csv válido, Ex.: 01-01-2022.csv
