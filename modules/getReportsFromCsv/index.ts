@@ -22,7 +22,6 @@ export const getReportsFromCsv = (FILE_PATH: string): Promise<Reports> => {
         const castToFloat = (column: string | number): boolean => column === 'Lat' || column === 'Long_'
 
         parse(fileContent, {
-            delimiter: ',',
             columns: headers,
             cast: (columnValue, context) => {
                 if (castToInt(context.column)) {

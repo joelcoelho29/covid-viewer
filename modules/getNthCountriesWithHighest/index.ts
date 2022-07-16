@@ -2,9 +2,9 @@ import {Reports} from "../getReportsFromCsv/entities/report";
 
 type Attributes = "active" | "confirmed" | "recovered" | "deaths"
 
-export const getNthCountriesWithHighest = (reports: Reports,
-                                                    attribute: Attributes,
-                                                    n: number): Reports => {
+export const getNthCountriesWithHighestAttributeValue = (reports: Reports,
+                                                         attribute: Attributes,
+                                                         n: number): Reports => {
 
     if (n > reports.length) return [];
     if (n == reports.length) return reports;
